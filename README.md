@@ -39,6 +39,16 @@ Les données sont téléchargées automatiquement depuis OpenML (identifiants 41
    - **équilibre global** : charge prédite rapportée à la charge observée.
 5. **Lecture tarifaire** : les **relativités** `exp(β)` donnent le coefficient multiplicateur de chaque modalité par rapport à la modalité de référence.
 
+## Résultats
+
+<!-- RESULTATS:DEBUT -->
+*Les résultats s'affichent ici après l'exécution automatique du projet.*
+<!-- RESULTATS:FIN -->
+
+**Lecture :** une relativité de 1,30 signifie une fréquence de sinistres 30 % plus élevée que la modalité de référence, toutes choses égales par ailleurs. Le Gini mesure la capacité du tarif à séparer les bons et les mauvais risques (0 = tarif uniforme).
+
+Le projet est exécuté automatiquement par GitHub Actions (`.github/workflows/run.yml`) : à chaque modification, le modèle est réentraîné sur freMTPL2 et cette section est mise à jour.
+
 ## Lancer le projet
 
 ```bash
